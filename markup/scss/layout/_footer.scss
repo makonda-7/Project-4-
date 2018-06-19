@@ -1,0 +1,142 @@
+#footer {
+	background-color: #43484d;
+	color: #bdc6cf;
+	padding: 20px 0;
+
+	@include media (">=tablet") {
+		padding: 45px 0 65px;
+	}
+}
+
+.footer-wrapper {
+	@include media (">=tablet") {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		text-align: left;
+		margin: 0 -15px;
+	}
+
+	.col {
+		padding: 15px;
+
+		@include media (">=tablet") {
+			width: 33.3%;
+			padding: 15px;
+		}
+
+		ul {
+			@extend %listreset;
+		}
+
+		a {
+			@include animate(color);
+
+			text-decoration: none;
+			line-height: 1.875;
+			
+			&:hover {
+				color: $white;
+			}
+		}
+
+		h4 {
+			color: $white;
+			line-height: 1;
+		}
+
+		address {
+			padding: 8px 0;
+			font-style: normal;
+
+			@include media (">=tablet") {
+				max-width: 250px;
+			}
+		}
+
+		span {
+			font-size: 12px;
+		}
+	}
+
+	.form {
+		position: relative;
+		font-size: 14px;
+		display: block;
+		max-width: 360px;
+		margin: 0 auto;
+
+		input {
+			border: 2px solid rgba(225,231,237,.2);
+			border-radius: 6px;
+			height: 40px;
+			padding: 0 50px 0 20px;
+			background-color: transparent;
+			width: 100%;
+			color: inherit;
+			@extend.ellipsis;
+
+			&:focus {
+				border-color: rgba(225,231,237,.2);
+				outline: none;
+			}
+		}
+	}
+
+	.footer-button {
+		@include animate(background-color);
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-height: 100%;
+		border-radius: 0 6px 6px 0;
+		background-color: $green;
+		line-height: 1;
+		color: $white;
+		padding: 0 14px;
+		border: none;
+		outline: none;
+		text-align: center;
+
+		&:hover {
+			background-color: #6A7983;
+		}
+
+		.icon-search {
+			font-size: 18px;
+		}
+	}
+}
+
+.social-networks {
+	@extend %listreset;
+
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 30px 15px 30px 0;
+	}
+
+	a {
+		width: 46px;
+		height: 46px;
+		padding: 23px;
+		border-radius: 50%;
+		background-color: #5e6977;
+		color: #bdc6cf;
+		font-size: 16px;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+
+		i {
+			position: absolute;
+			top: 50%;
+			left: 50;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+}

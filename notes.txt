@@ -1,0 +1,9 @@
+1. Основной шрифт Roboto (подключаем гугл фонт)
+2. https://s3.amazonaws.com/scrstorage/p5389210s008i57w2.jpg  карусель
+https://s3.amazonaws.com/scrstorage/c53g9p0a10359645.jpg
+3. https://s3.amazonaws.com/scrstorage/ybv53p90383909g2l62.jpg  табы
+https://s3.amazonaws.com/scrstorage/f5r390567h3440m12.jpg
+4.  https://s3.amazonaws.com/scrstorage/539e087781c20r5b7.jpg
+основную навигация на мобилах реализовуем с помощью этого джееса (принцип его работы прост, при клике на опенер на body довешивается класс, от этого класса css3 мы анимируем наш блок с навигацией, делаем ефект слайд или фейд, этот джеес не собирает сам навигацию в бургер, просто по клику довешивает класс на body, от которого мы сами делаем магию css3)
+https://s3.amazonaws.com/scrstorage/s5y40020546h9v8q64.jpg
+5. все иконки реализуем иконочным шрифтом https://s3.amazonaws.com/scrstorage/x540f22s35r15210v9.jpg, логотип никогда не делаем шрифтом, делаем имажкой в формате svg, если в дизайне он сделан смарт объектом (https://s3.amazonaws.com/scrstorage/54o03180jrsp62739n1.jpg) или шейпом (https://s3.amazonaws.com/scrstorage/da540s3s3640681i54.jpg).
